@@ -25,7 +25,7 @@ $.ajax({
   data: '{}',
   success: function (data) {
     for (let elem of data) {
-      $('.places').append('<article>')
+      $('.places').append('<article><div class="title"><h2>' + place['name'] + '</h2><div class="price_by_night">' + place['price_by_night'] + '</div></div><div class="information"><div class="max_guest">' + place['max_guest'] + 'Guests</div><div class"number_rooms">' + place['number_rooms'] + 'bedrooms</div><div class="number_bathrooms">' + place['number_bathrooms'] + 'bathrooms</div><div class="user"><div class="description">' + place['description'] + '</div></article>');
     }
   }
-});
+  });
